@@ -111,4 +111,4 @@
 
 ---
 
-⭐ *Thanks for stopping by! Keep exploring my repositories for more cool projects.*  
+⭐ *Thanks for stopping by! Keep exploring my repositories for more cool projects. And, I am actively looking for internships If you are impressed by my profile, Kindly Contact me...*  

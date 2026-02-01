@@ -86,15 +86,6 @@
 
 🧩 A machine learning model analyzing crime patterns and predicting the likely perpetrator using historical behavioral data.
 
----
-
-## 📈 Streak Stats
-
-<p align="center">
-  <!-- Main Stats -->
-  <img width="48%" 
-       src="https://github-readme-stats-godkingjay.vercel.app/api?username=Mani2815&show_icons=true&theme=tokyonight" 
-  />
 
 ---
 

@@ -53,6 +53,8 @@
 <img src="https://skillicons.dev/icons?i=notion" height="45"/>
 <img src="https://skillicons.dev/icons?i=streamlit" height="45"/>
 <img src="https://skillicons.dev/icons?i=sklearn" height="45"/>
+<img src="https://skillicons.dev/icons?i=jupyter" height="45"/>
+<img src="https://skillicons.dev/icons?i=colab" height="45"/>
 
 
 </p>

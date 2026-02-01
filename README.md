@@ -91,9 +91,10 @@
 ## 📈 Streak Stats
 
 <p align="center">
-  <img width="48%" src="https://streak-stats.demolab.com?user=Mani2815&theme=tokyonight" />
-</p>
-
+  <!-- Main Stats -->
+  <img width="48%" 
+       src="https://github-readme-stats-godkingjay.vercel.app/api?username=Mani2815&show_icons=true&theme=tokyonight" 
+  />
 
 ---
 

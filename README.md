@@ -1,6 +1,6 @@
 <!-- Title -->
 <h1 align="center">Hi there 👋, I'm Maniarasan J</h1>
-<h3 align="center">Data & ML Enthusiast</h3>
+<h3 align="center">MCA Student @ Christ University | Data & ML Enthusiast</h3>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=maniarasan&label=Profile%20Views&color=brightgreen&style=flat-square" alt="views"/>
@@ -8,7 +8,7 @@
 
 <!-- Typing Animation -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=00C4FF&size=22&center=true&vCenter=true&width=600&lines=Aspiring+Data+Analyst;Aspiring+Data+Engineer;Aspiring+Data+Scientist;Python+%7C+SQL+%7C+Power+BI+Learner;Tech+Enthusiast+from+India;Always+Learning+New+Things!">
+  <img src="https://readme-typing-svg.herokuapp.com?color=00C4FF&size=22&center=true&vCenter=true&width=600&lines=MCA+Student;Aspiring+Data+Analyst;Aspiring+Data+Engineer;Aspiring+Data+Scientist;Python+%7C+SQL+%7C+Power+BI+Learner;Tech+Enthusiast+from+India;Always+Learning+New+Things!">
 </p>
 
 ---
@@ -91,7 +91,7 @@
 ## 📈 Streak Stats
 
 <p align="center">
-  <img width="48%" src="https://streak-stats.demolab.com?user=maniarasan&theme=tokyonight" />
+  <img width="48%" src="https://streak-stats.demolab.com?user=mani2815&theme=tokyonight" />
 </p>
 
 

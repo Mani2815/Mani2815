@@ -47,6 +47,14 @@
   <img src="https://skillicons.dev/icons?i=powerbi" height="45"/>
   <img src="https://skillicons.dev/icons?i=git" height="45"/>
   <img src="https://skillicons.dev/icons?i=github" height="45"/>
+  <img src="https://skillicons.dev/icons?i=tableau" height="45"/>
+<img src="https://skillicons.dev/icons?i=java" height="45"/>
+<img src="https://skillicons.dev/icons?i=vscode" height="45"/>
+<img src="https://skillicons.dev/icons?i=notion" height="45"/>
+<img src="https://skillicons.dev/icons?i=streamlit" height="45"/>
+<img src="https://skillicons.dev/icons?i=sklearn" height="45"/>
+
+
 </p>
 
 ---
@@ -62,12 +70,12 @@
 ### 🔹 **Sentiment Analysis**
 💬 NLP model analyzing polarity & subjectivity using TextBlob.
 
-###🔹 Assessing the College Campus Experience
+### 🔹 Assessing the College Campus Experience
 
 A data-driven analysis project that explores student feedback and campus metrics to evaluate the overall college experience.
 This involves data collection, cleaning and structuring responses, performing statistical analysis, visualizing sentiment trends across departments, and identifying key factors that influence satisfaction.
 
-###🔹 Reddit Streamlit Dashboard - ETL
+### 🔹 Reddit Streamlit Dashboard - ETL
 
 An interactive web dashboard built with Streamlit that streams live Reddit data and visualizes trends in real time.
 Features include:
@@ -85,12 +93,7 @@ Clean visual layouts with bar charts, word clouds, time trends
 ## 📈 GitHub Stats
 
 <p align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=maniarasan&show_icons=true&theme=tokyonight" />
-  <img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=maniarasan&theme=tokyonight" />
-</p>
-
-<p align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=maniarasan&layout=compact&theme=tokyonight" />
+  <img width="48%" src="https://streak-stats.demolab.com?user=maniarasan&theme=tokyonight" />
 </p>
 
 ---

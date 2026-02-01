@@ -32,8 +32,10 @@
 <p align="left">
   <a href="https://www.linkedin.com/in/maniarasan-j-175780248/" target="blank"><img src="https://skillicons.dev/icons?i=linkedin" height="45"/></a>
   <a href="https://github.com/Mani2815" target="blank"><img src="https://skillicons.dev/icons?i=github" height="45"/></a>
-  <a href="https://www.hackerrank.com/profile/maniarasan2815" target="blank"><img src="https://skillicons.dev/icons?i=hackerrank" height="45"/></a>
-</p>
+  <a href="https://www.hackerrank.com/maniarasan2815" target="_blank">
+  <img src="https://img.shields.io/badge/HackerRank-1ba94c?style=for-the-badge&logo=HackerRank&logoColor=white" height="35"/>
+</a>
+
 
 ---
 
@@ -74,29 +76,24 @@
 
 ### 🔹 Assessing the College Campus Experience
 
-A data-driven analysis project that explores student feedback and campus metrics to evaluate the overall college experience.
-This involves data collection, cleaning and structuring responses, performing statistical analysis, visualizing sentiment trends across departments, and identifying key factors that influence satisfaction.
+📊 A statistical and visual analysis exploring student feedback to evaluate and improve overall campus experience.
 
-### 🔹 Reddit Streamlit Dashboard - ETL
+### 🔹 Reddit Streamlit Dashboard – ETL
 
-An interactive web dashboard built with Streamlit that streams live Reddit data and visualizes trends in real time.
-Features include:
+🖥️ A real-time Reddit analytics dashboard performing ETL, sentiment tracking, and interactive trend visualization.
 
-Live fetching of subreddit posts and comments using the Reddit API
+### 🔹 Crime Data Analysis & Prediction of Perpetrator Identity
 
-Sentiment analysis and keyword tracking
-
-Interactive filters for topics, upvotes, and dates
-
-Clean visual layouts with bar charts, word clouds, time trends
+🧩 A machine learning model analyzing crime patterns and predicting the likely perpetrator using historical behavioral data.
 
 ---
 
-## 📈 GitHub Stats
+## 📈 Streak Stats
 
 <p align="center">
   <img width="48%" src="https://streak-stats.demolab.com?user=maniarasan&theme=tokyonight" />
 </p>
+
 
 ---
 

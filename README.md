@@ -98,8 +98,9 @@
 
 ## 🚀 Contribution Graph
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" />
+  <img src="https://raw.githubusercontent.com/Mani2815/Mani2815/output/github-contribution-grid-snake-dark.svg" />
 </p>
+
 
 ---
 

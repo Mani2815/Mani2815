@@ -91,7 +91,7 @@
 
 ## ✍ Quote that Inspires me to Work
 <p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical"/>
+  <img src="https://raw.githubusercontent.com/Mani2815/Mani2815/output/github-contribution-grid-snake-dark.svg" />
 </p>
 
 ---

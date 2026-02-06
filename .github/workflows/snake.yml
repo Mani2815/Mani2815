@@ -2,7 +2,7 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * *"   # Runs every day at midnight
   workflow_dispatch:
 
 jobs:
@@ -10,10 +10,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Generate snake animation
+      - name: Generate the snake animation (Dark Theme)
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: Mani2815
+
+          # DARK MODE COLORS (no more white boxes)
+          color_snake: '#22ff22'  # neon green snake
+          color_dots: '#1a1a1a,#222,#333,#444,#555'  # dark grid
+
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg

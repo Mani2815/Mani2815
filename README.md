@@ -17,7 +17,7 @@
 
 - 🎓 MCA Student at **Christ University Central Campus**
 - 🧪 Built multiple **ML & Analytics projects** (Churn, Sentiment, Predictive, Descriptive analytics, ETL)
-- 🚀 Passionate about **Data Engineering, Automation, Dashboards**
+- 🚀 Passionate about **Data Engineering, Modeling & Dashboards**
 - 🎯 Goal → Become a **Data Engineer**
 
 ---

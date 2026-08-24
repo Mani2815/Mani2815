@@ -90,7 +90,11 @@ I specialize in building practical systems around data engineering and AI/ML.
 ## `~/` contribution calendar
 
 <!-- 3D isometric calendar, regenerated every 6h by .github/workflows/metrics.yml -->
-<img src="assets/metrics.isocalendar.svg?v=3" width="90%" alt="3D isometric contribution calendar">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/metrics.isocalendar-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/metrics.isocalendar-light.svg">
+  <img src="assets/metrics.isocalendar-dark.svg" width="90%" alt="3D isometric contribution calendar">
+</picture>
 
 <br><br>
 

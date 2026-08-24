@@ -32,9 +32,9 @@ query($login: String!) {
 
 THEMES = {
     "dark": {
-        "bg": "#0d1117", "text": "#c9d1d9",
+        "bg": "transparent", "text": "#c9d1d9",
         "colors": {
-            0: ("#161b22", "#0d1117", "#21262d"),
+            0: ("#ebedf0", "#d1d5da", "#f3f4f6"),
             1: ("#0e4429", "#002d11", "#165c36"),
             2: ("#006d32", "#005323", "#00873d"),
             3: ("#26a641", "#168a30", "#33c24f"),
@@ -42,7 +42,7 @@ THEMES = {
         }
     },
     "light": {
-        "bg": "#ffffff", "text": "#1f2328",
+        "bg": "transparent", "text": "#1f2328",
         "colors": {
             0: ("#ebedf0", "#d1d5da", "#f3f4f6"),
             1: ("#9be9a8", "#79c98a", "#b5ebb0"),
@@ -103,23 +103,58 @@ def generate_svg(days, total, theme_name):
     W, H = 1060, 500
     OX, OY = 100, 24
     
-    blue = "#58a6ff" if theme_name == "dark" else "#0969da"
-    gray = "#8b949e" if theme_name == "dark" else "#57606a"
+    blue = "#0969da" if theme_name == "light" else "#58a6ff"
+    gray = "#57606a" if theme_name == "light" else "#8b949e"
     
-    tx = 830
-    ty = 140
+    tx = 650
+    ty = 100
     
     svg = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">',
         f'<rect width="{W}" height="{H}" fill="{theme["bg"]}" rx="10"/>',
         
-        f'<text x="{tx}" y="{ty}" fill="{blue}" font-family="sans-serif" font-weight="bold" font-size="16">Commits streaks</text>',
-        f'<text x="{tx}" y="{ty+24}" fill="{gray}" font-family="sans-serif" font-size="14">Current streak {current:,} days</text>',
-        f'<text x="{tx}" y="{ty+44}" fill="{gray}" font-family="sans-serif" font-size="14">Best streak {longest:,} days</text>',
+        # Title
+        f'<g transform="translate(60, 40)">',
+        f'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="{blue}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>',
+        f'<text x="30" y="15" fill="{blue}" font-family="sans-serif" font-weight="bold" font-size="20">Contributions calendar</text>',
+        f'</g>',
         
-        f'<text x="{tx}" y="{ty+94}" fill="{blue}" font-family="sans-serif" font-weight="bold" font-size="16">Commits per day</text>',
-        f'<text x="{tx}" y="{ty+118}" fill="{gray}" font-family="sans-serif" font-size="14">Highest in a day at {max_day:,}</text>',
-        f'<text x="{tx}" y="{ty+138}" fill="{gray}" font-family="sans-serif" font-size="14">Average per day at ~{avg:.2f}</text>',
+        # Commits streaks
+        f'<g transform="translate({tx}, {ty})">',
+        f'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="{blue}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="4" y="4" width="6" height="16"></rect></svg>',
+        f'<text x="30" y="14" fill="{blue}" font-family="sans-serif" font-weight="bold" font-size="16">Commits streaks</text>',
+        
+        # Current streak
+        f'<g transform="translate(0, 24)">',
+        f'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="{gray}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"></path></svg>',
+        f'<text x="30" y="13" fill="{gray}" font-family="sans-serif" font-size="15">Current streak {current:,} days</text>',
+        f'</g>',
+        
+        # Best streak
+        f'<g transform="translate(0, 48)">',
+        f'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="{gray}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5l-10 14M22 12H2M19 19L5 5"></path></svg>',
+        f'<text x="30" y="13" fill="{gray}" font-family="sans-serif" font-size="15">Best streak {longest:,} days</text>',
+        f'</g>',
+        f'</g>',
+        
+        # Commits per day
+        f'<g transform="translate({tx}, {ty + 90})">',
+        f'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="{blue}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><line x1="3" y1="12" x2="9" y2="12"></line><line x1="15" y1="12" x2="21" y2="12"></line></svg>',
+        f'<text x="30" y="14" fill="{blue}" font-family="sans-serif" font-weight="bold" font-size="16">Commits per day</text>',
+        
+        # Highest in a day
+        f'<g transform="translate(0, 24)">',
+        f'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="{gray}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>',
+        f'<text x="30" y="13" fill="{gray}" font-family="sans-serif" font-size="15">Highest in a day at {max_day:,}</text>',
+        f'</g>',
+        
+        # Average per day
+        f'<g transform="translate(0, 48)">',
+        f'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="{gray}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>',
+        f'<text x="30" y="13" fill="{gray}" font-family="sans-serif" font-size="15">Average per day at ~{avg:.2f}</text>',
+        f'</g>',
+        f'</g>',
+        
         '<g>'
     ]
     

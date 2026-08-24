@@ -100,14 +100,14 @@ def generate_svg(days, total, theme_name):
     # SVG parameters
     DX, DY = 14, 8
     DZ = 3
-    W, H = 1060, 500
-    OX, OY = 100, 24
+    W, H = 1250, 650
+    OX, OY = 150, 140
     
     blue = "#0969da" if theme_name == "light" else "#58a6ff"
     gray = "#57606a" if theme_name == "light" else "#8b949e"
     
-    tx = 650
-    ty = 100
+    tx = 950
+    ty = 120
     
     svg = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">',

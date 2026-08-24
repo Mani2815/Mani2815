@@ -3,13 +3,13 @@
 <!-- PORTRAIT - Add your portrait to assets/jacket.png and regenerate with:
        python scripts/dotify.py assets/jacket.png -o assets/portrait \
          --cols 100 --equalize --detail 0.5 --color -->
-<!-- <img src="assets/portrait.svg" width="300" alt="Mani Arasan, rendered as a dot matrix"> -->
+<!-- <img src="assets/portrait.svg" width="300" alt="Maniarasan J, rendered as a dot matrix"> -->
 
 <br>
 
 <!-- NAME / TAGLINE - animated typing -->
 <a href="https://github.com/Mani2815">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=39D353&center=true&vCenter=true&width=600&lines=Mani+Arasan;Data+Engineer;AI%2FML+Engineer;MCA+%40+CHRIST+University;Building+Data+%2B+AI+Systems" alt="typing banner">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=39D353&center=true&vCenter=true&width=600&lines=Maniarasan+J;Data+Engineer;AI%2FML+Engineer;MCA+%40+CHRIST+University;Building+Data+%2B+AI+Systems" alt="typing banner">
 </a>
 
 <br>
@@ -32,7 +32,7 @@
 $ cat about.txt
 ```
 
-Hi, I'm **Mani Arasan**. I am an MCA student at CHRIST University with a background in Computer Science and Data Analytics. 
+Hi, I'm **Maniarasan J**. I am an MCA student at CHRIST University with a background in Computer Science and Data Analytics.
 I specialize in building practical systems around data engineering and AI/ML.
 
 - Currently exploring **data engineering and AI/ML systems**

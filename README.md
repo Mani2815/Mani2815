@@ -168,11 +168,11 @@ I specialize in building practical systems around data engineering and AI/ML.
   </a>
 </td>
 <td width="50%">
-  <a href="https://github.com/Mani2815/kantaswara">
+  <a href="https://github.com/Mani2815/KantaSwara">
     <picture>
-      <source media="(prefers-color-scheme: dark)"  srcset="assets/card-kantaswara-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="assets/card-kantaswara-light.svg">
-      <img src="assets/card-kantaswara-dark.svg" width="420" alt="KantaSwara">
+      <source media="(prefers-color-scheme: dark)"  srcset="assets/card-KantaSwara-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/card-KantaSwara-light.svg">
+      <img src="assets/card-KantaSwara-dark.svg" width="420" alt="KantaSwara">
     </picture>
   </a>
 </td>

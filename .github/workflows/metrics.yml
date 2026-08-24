@@ -23,7 +23,7 @@ jobs:
       - name: Coding habits
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
           user: Mani2815
           filename: assets/metrics.habits.svg
           base: ""
@@ -44,7 +44,7 @@ jobs:
       - name: Achievements
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
           user: Mani2815
           filename: assets/metrics.achievements.svg
           base: ""

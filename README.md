@@ -3,7 +3,7 @@
 <!-- PORTRAIT - Add your portrait to assets/jacket.png and regenerate with:
        python scripts/dotify.py assets/jacket.png -o assets/portrait \
          --cols 100 --equalize --detail 0.5 --color -->
-<!-- <img src="assets/portrait.svg" width="300" alt="Maniarasan J, rendered as a dot matrix"> -->
+<img src="assets/portrait.svg" width="300" alt="Maniarasan J, rendered as a dot matrix">
 
 <br>
 

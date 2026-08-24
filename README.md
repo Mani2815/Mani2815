@@ -190,10 +190,4 @@ I specialize in building practical systems around data engineering and AI/ML.
 
 </div>
 
----
 
-<div align="center">
-
-<sub>`01101011 01100101 01100101 01110000 00100000 01100010 01110101 01101001 01101100 01100100 01101001 01101110 01100111`</sub>
-
-</div>

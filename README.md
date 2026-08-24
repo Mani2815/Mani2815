@@ -183,16 +183,12 @@ I specialize in building practical systems around data engineering and AI/ML.
 </tr>
 </table>
 
-<sub>
-
 | project | live | stack |
 |---|---|---|
 | **[Streamo](https://github.com/Mani2815/Streamo)** | https://streamo-xbeu.onrender.com | `Data Engineering` |
 | **[fraud_shield](https://github.com/Mani2815/fraud_shield)** | https://fraud-sheild-hvkg.onrender.com | `AI/ML` |
 | **[Crime_Prediction](https://github.com/Mani2815/Crime_Prediction)** | https://crimeprediction-production.up.railway.app | `Analytics` |
 | **[KantaSwara](https://github.com/Mani2815/KantaSwara)** | https://kantaswara.vercel.app | `Analytics` `AI/ML` |
-
-</sub>
 
 </div>
 

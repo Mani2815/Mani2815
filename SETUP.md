@@ -73,21 +73,21 @@ snake every 12h, radar daily).
 The current one was made with:
 
 ```powershell
-python scripts\dotify.py assets\jacket.png -o assets\portrait --cols 100 --equalize --detail 0.5 --color --reveal
+python scripts\dotify.py assets\maniarasan.png -o assets\portrait --cols 100 --equalize --detail 0.5 --color --reveal
 ```
 
 Other looks from the same source:
 
 ```powershell
 # green monochrome, matching the contribution-graph palette
-python scripts\dotify.py assets\jacket.png -o assets\portrait --cols 88 --equalize --detail 0.5 --animate
+python scripts\dotify.py assets\maniarasan.png -o assets\portrait --cols 88 --equalize --detail 0.5 --animate
 
 # literal 0s and 1s instead of dots
-python scripts\dotify.py assets\jacket.png -o assets\portrait --mode binary --cols 62 --equalize --detail 0.5
+python scripts\dotify.py assets\maniarasan.png -o assets\portrait --mode binary --cols 62 --equalize --detail 0.5
 
 # plain text art — paste the .txt into a ``` code block in the README
-python scripts\dotify.py assets\jacket.png -o assets\portrait --mode ascii --cols 80
-python scripts\dotify.py assets\jacket.png -o assets\portrait --mode braille --cols 100
+python scripts\dotify.py assets\maniarasan.png -o assets\portrait --mode ascii --cols 80
+python scripts\dotify.py assets\maniarasan.png -o assets\portrait --mode braille --cols 100
 ```
 
 Worth knowing:
@@ -112,7 +112,7 @@ Worth knowing:
   monochrome version; on the colour one it reads as vertical banding across the face,
   which is why it's off here. It composes with `--reveal` if you want both.
 - `--square` crops to 1:1, with `--focus X,Y` to say which point should end up centred
-  (`0.55,0.45` for a face sitting right of and above the middle). `jacket.png` was
+  (`0.55,0.45` for a face sitting right of and above the middle). `maniarasan.png` was
   already square, so it isn't used.
 - `--circle` masks to a circle and fades the edge. Good for a tight head shot, but it
   clips the shoulders on this framing.
@@ -120,7 +120,7 @@ Worth knowing:
 
 If the source has an alpha channel, it's treated as a subject cutout: nothing is drawn
 outside it, and `--equalize` measures only the subject rather than a huge empty
-background. `jacket.png` already has one, which is why the orange backdrop vanishes.
+background. `maniarasan.png` already has one, which is why the orange backdrop vanishes.
 
 ### The stat and repo cards
 

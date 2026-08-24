@@ -1,7 +1,7 @@
 <div align="center">
 
-<!-- PORTRAIT - Add your portrait to assets/jacket.png and regenerate with:
-       python scripts/dotify.py assets/jacket.png -o assets/portrait \
+<!-- PORTRAIT - Add your portrait to assets/maniarasan.png and regenerate with:
+       python scripts/dotify.py assets/maniarasan.png -o assets/portrait \
          --cols 100 --equalize --detail 0.5 --color -->
 <img src="assets/portrait.svg" width="300" alt="Maniarasan J, rendered as a dot matrix">
 
@@ -9,16 +9,16 @@
 
 <!-- NAME / TAGLINE - animated typing -->
 <a href="https://github.com/Mani2815">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=39D353&center=true&vCenter=true&width=600&lines=Maniarasan+J;Data+Engineer;AI%2FML+Engineer;MCA+%40+CHRIST+University;Building+Data+%2B+AI+Systems" alt="typing banner">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=39D353&center=true&vCenter=true&width=600&lines=Maniarasan+J;Data+Engineer;Ex.AI%2FML+Engineer%28Intern%29;MCA+%40+CHRIST+University;Building+Data+%2B+AI+Systems" alt="typing banner">
 </a>
 
 <br>
 
 <!-- SOCIALS -->
-<a href="https://linkedin.com/in/YOUR_LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-<a href="mailto:YOUR_EMAIL"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-<a href="https://YOUR_PORTFOLIO_URL"><img src="https://img.shields.io/badge/Portfolio-111111?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"></a>
-<a href="https://leetcode.com/u/YOUR_LEETCODE"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"></a>
+<a href="https://linkedin.com/in/maniarasan-j-175780248/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="mailto:maniarasan2815@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+<a href="https://maniarasan.vercel.app"><img src="https://img.shields.io/badge/Portfolio-111111?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"></a>
+<a href="https://leetcode.com/u/Mani_2815/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"></a>
 
 <img src="https://komarev.com/ghpvc/?username=Mani2815&style=flat&color=39d353&label=profile+views" alt="profile views">
 

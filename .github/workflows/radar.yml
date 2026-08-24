@@ -11,6 +11,7 @@ on:
       - "assets/projects.json"
       - "scripts/radar.py"
       - "scripts/cards.py"
+      - "scripts/isocalendar.py"
       - ".github/workflows/radar.yml"
 
 permissions:

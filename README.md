@@ -2,7 +2,7 @@
 
 <!-- PORTRAIT - Add your portrait to assets/maniarasan.png and regenerate with:
        python scripts/dotify.py assets/maniarasan.png -o assets/portrait \
-         --cols 100 --equalize --detail 0.5 --color --bg "#0d1117" -->
+         --cols 100 --equalize --detail 0.5 --color --bg "#0d1117" --reveal --animate -->
 <img src="assets/portrait.svg?v=3" width="300" alt="Maniarasan J, rendered as a dot matrix">
 
 <br>

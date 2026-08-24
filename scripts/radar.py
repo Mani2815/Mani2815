@@ -67,7 +67,7 @@ UA = {"User-Agent": "radar.py"}
 def from_json(path: Path):
     d = json.loads(path.read_text(encoding="utf-8"))
     axes = [(a["label"], float(a["value"])) for a in d["axes"]]
-    return d.get("title", "Skill Radar"), axes
+    return d.get("title", "Skill Radar"), axes, axes
 
 
 def _api(url, token):
@@ -92,7 +92,7 @@ def from_github(user: str, token: str | None, limit: int, exclude: set[str],
         if not repos:
             break
         for repo in repos:
-            if repo.get("fork") or repo.get("archived"):
+            if repo.get("fork") or repo.get("archived") or repo.get("name", "").lower() == user.lower():
                 continue
             try:
                 langs = _api(repo["languages_url"], token)
@@ -111,11 +111,14 @@ def from_github(user: str, token: str | None, limit: int, exclude: set[str],
 
     top = sorted(totals.items(), key=lambda kv: -kv[1])[:limit]
     peak = top[0][1]
+    total_bytes = sum(totals.values())
+    raw_percentages = [(n, round(100 * c / total_bytes, 1)) for n, c in top]
+    
     # Raw byte ratios are brutally lopsided — one dominant language leaves every
     # other axis pinned near the centre and the shape reads as a spike. `curve`
     # compresses that: 1.0 is linear, 0.5 (default) is sqrt, lower spreads more.
     axes = [(n, round(100 * (c / peak) ** curve, 1)) for n, c in top]
-    return f"{user} · language mix", axes
+    return f"{user} · language mix", axes, raw_percentages
 
 
 # --------------------------------------------------------------------------- #
@@ -269,6 +272,55 @@ def esc(s: str) -> str:
 # --------------------------------------------------------------------------- #
 
 
+def render_language_card(title, raw_percentages, theme: str) -> str:
+    c = THEMES[theme]
+    W, H = 480, 166
+    pad = 22
+    out = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" '
+        f'width="{W}" height="{H}" role="img" aria-label="Most used languages" '
+        f'font-family="{FONT}">'
+    ]
+    if c["bg"] != "none":
+        out.append(f'<rect width="100%" height="100%" fill="{c["bg"]}"/>')
+
+    out.append(
+        f'<text x="{pad}" y="{pad + 14}" font-size="16" font-weight="600" '
+        f'fill="{c["title"]}">Most used languages</text>'
+    )
+    
+    bar_x = pad
+    bar_y = pad + 30
+    bar_w = W - 2 * pad
+    bar_h = 8
+    
+    colors = ["#39d353", "#2da44e", "#7ee787", "#3fb950", "#216e39", "#116329", "#8b949e", "#c9d1d9"]
+    
+    x_offset = bar_x
+    for i, (name, pct) in enumerate(raw_percentages):
+        w = bar_w * (pct / 100)
+        if w > 0:
+            color = colors[i % len(colors)]
+            out.append(f'<rect x="{x_offset:.1f}" y="{bar_y}" width="{w:.1f}" height="{bar_h}" fill="{color}" rx="4"/>')
+            x_offset += w
+
+    legend_y = bar_y + 30
+    cols = 2
+    tw = bar_w / cols
+    for i, (name, pct) in enumerate(raw_percentages):
+        cx = pad + (i % cols) * tw
+        cy = legend_y + (i // cols) * 20
+        color = colors[i % len(colors)]
+        out.append(f'<circle cx="{cx + 4}" cy="{cy - 4}" r="4" fill="{color}"/>')
+        out.append(
+            f'<text x="{cx + 14}" y="{cy}" font-size="12" font-weight="600" '
+            f'fill="{c["label"]}">{esc(name)} <tspan fill="{c["value"]}" font-weight="400">{pct}%</tspan></text>'
+        )
+
+    out.append("</svg>")
+    return "".join(out)
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(description=__doc__,
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -296,11 +348,11 @@ def main(argv=None):
     if args.github:
         token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
         excl = {s.strip().lower() for s in args.exclude.split(",") if s.strip()}
-        title, axes = from_github(args.github, token, args.limit, excl, args.curve)
+        title, axes, raw_percentages = from_github(args.github, token, args.limit, excl, args.curve)
     else:
         if not args.data.exists():
             sys.exit(f"no data file: {args.data}")
-        title, axes = from_json(args.data)
+        title, axes, raw_percentages = from_json(args.data)
 
     if args.title is not None:
         title = args.title
@@ -314,6 +366,12 @@ def main(argv=None):
         dest = args.out.with_name(f"{args.out.name}-{theme}.svg")
         dest.write_text(svg, encoding="utf-8")
         print(f"wrote {dest}  ({len(axes)} axes)")
+
+        if args.github:
+            bar_svg = render_language_card(title, raw_percentages, theme)
+            bar_dest = args.out.with_name(f"card-languages-{theme}.svg")
+            bar_dest.write_text(bar_svg, encoding="utf-8")
+            print(f"wrote {bar_dest}  ({len(raw_percentages)} languages)")
 
 
 if __name__ == "__main__":

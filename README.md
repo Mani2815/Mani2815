@@ -168,11 +168,11 @@ I specialize in building practical systems around data engineering and AI/ML.
   </a>
 </td>
 <td width="50%">
-  <a href="https://github.com/Mani2815/Smart_Classroom_Utilization_Analyzer">
+  <a href="https://github.com/Mani2815/KantaSwara">
     <picture>
-      <source media="(prefers-color-scheme: dark)"  srcset="assets/card-Smart_Classroom_Utilization_Analyzer-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="assets/card-Smart_Classroom_Utilization_Analyzer-light.svg">
-      <img src="assets/card-Smart_Classroom_Utilization_Analyzer-dark.svg" width="420" alt="Smart_Classroom_Utilization_Analyzer">
+      <source media="(prefers-color-scheme: dark)"  srcset="assets/card-KantaSwara-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/card-KantaSwara-light.svg">
+      <img src="assets/card-KantaSwara-dark.svg" width="420" alt="KantaSwara">
     </picture>
   </a>
 </td>
@@ -183,10 +183,10 @@ I specialize in building practical systems around data engineering and AI/ML.
 
 | project | live | stack |
 |---|---|---|
-| **[Streamo](https://github.com/Mani2815/Streamo)** | - | `Data Engineering` |
-| **[fraud_shield](https://github.com/Mani2815/fraud_shield)** | - | `AI/ML` |
-| **[Crime_Prediction](https://github.com/Mani2815/Crime_Prediction)** | - | `Analytics` |
-| **[Smart_Classroom_Utilization_Analyzer](https://github.com/Mani2815/Smart_Classroom_Utilization_Analyzer)** | - | `Analytics` `AI/ML` |
+| **[Streamo](https://github.com/Mani2815/Streamo)** | https://streamo-xbeu.onrender.com | `Data Engineering` |
+| **[fraud_shield](https://github.com/Mani2815/fraud_shield)** | https://fraud-sheild-hvkg.onrender.com | `AI/ML` |
+| **[Crime_Prediction](https://github.com/Mani2815/Crime_Prediction)** | https://crimeprediction-production.up.railway.app | `Analytics` |
+| **[KantaSwara](https://github.com/Mani2815/KantaSwara)** | https://kantaswara.vercel.app | `Analytics` `AI/ML` |
 
 </sub>
 

@@ -70,3 +70,4 @@ jobs:
           git add assets/radar-*.svg assets/card-*.svg assets/metrics.isocalendar*.svg
           git diff --staged --quiet || git commit -m "chore: refresh charts and cards"
           git push
+

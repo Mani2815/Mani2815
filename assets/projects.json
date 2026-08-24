@@ -1,0 +1,21 @@
+{
+  "_comment": "Featured repos, in README order. Star/fork/language come live from the API on every run; the description here overrides the repo's GitHub description (all four of these currently have none set). Setting them on GitHub too is worth doing - it helps anyone browsing your repo list.",
+  "projects": [
+    {
+      "repo": "Streamo",
+      "description": "Real-time data engineering platform for ingesting, processing and analyzing streaming data."
+    },
+    {
+      "repo": "fraud_shield",
+      "description": "Fraud detection system using AI/ML and transaction analysis."
+    },
+    {
+      "repo": "Crime_Prediction",
+      "description": "Crime Data Analysis and Perpetrator Identity Prediction."
+    },
+    {
+      "repo": "Smart_Classroom_Utilization_Analyzer",
+      "description": "Analytics and AI system for smart classroom utilization."
+    }
+  ]
+}
